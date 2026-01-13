@@ -183,7 +183,7 @@ class History(Base):
     generation_id = Column(UUID(as_uuid=True), ForeignKey("generations.id"), nullable=False)
     
     action = Column(String(50))  # 'generated', 'edited', 'regenerated', 'exported'
-    metadata = Column(JSON)  # Información adicional de la acción
+    request_metadata = Column(JSON)  # Información adicional de la acción (renombrado de 'metadata' para evitar conflicto con SQLAlchemy)
     
     created_at = Column(DateTime, default=datetime.utcnow)
     
