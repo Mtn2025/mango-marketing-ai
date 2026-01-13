@@ -1,0 +1,135 @@
+{
+    "app": {
+        "title": "Mango Marketing AI",
+        "subtitle": "Generador de contenido con IA",
+        "version": "1.0.0"
+    },
+    "navigation": {
+        "generator": "Generador",
+        "history": "Historial",
+        "settings": "Configuración"
+    },
+    "config": {
+        "title": "Configuración",
+        "api_key": "API Key",
+        "api_key_placeholder": "Ingresa tu API key",
+        "language": "Idioma",
+        "quality": "Nivel de calidad",
+        "quality_fast": "Rápido",
+        "quality_professional": "Profesional",
+        "quality_elite": "Elite",
+        "save": "Guardar configuración",
+        "test_connection": "Probar conexión"
+    },
+    "product": {
+        "title": "Información del Producto",
+        "name": "Nombre del producto",
+        "name_placeholder": "Ej: Café Artesanal Oaxaqueño",
+        "description": "Descripción",
+        "description_placeholder": "Describe tu producto...",
+        "category": "Categoría",
+        "price": "Precio",
+        "price_placeholder": "250.00",
+        "currency": "Moneda",
+        "platform": "Plataforma",
+        "tone": "Tono",
+        "length": "Longitud",
+        "length_short": "Corto",
+        "length_medium": "Medio",
+        "length_long": "Largo",
+        "emojis": "Usar emojis",
+        "benefits": "Beneficios (máx 3)",
+        "benefit_placeholder": "Ej: 100% orgánico",
+        "add_benefit": "Agregar beneficio",
+        "keywords": "Palabras clave",
+        "keyword_placeholder": "Ej: café, artesanal, oaxaca"
+    },
+    "generator": {
+        "title": "Generar Copy",
+        "button": "Generar Copy con IA",
+        "generating": "Generando...",
+        "copy_generated": "Copy generado",
+        "copy_to_clipboard": "Copiar al portapapeles",
+        "copied": "¡Copiado!",
+        "download_zip": "Descargar ZIP",
+        "regenerate": "Regenerar",
+        "error": "Error al generar",
+        "preview": "Vista previa"
+    },
+    "history": {
+        "title": "Historial",
+        "recent": "Generaciones recientes",
+        "empty": "No hay generaciones aún",
+        "empty_subtitle": "Genera tu primer copy para ver el historial",
+        "view": "Ver",
+        "delete": "Eliminar",
+        "regenerate": "Regenerar",
+        "stats_total": "Total",
+        "stats_today": "Hoy",
+        "stats_week": "Esta semana"
+    },
+    "tips": {
+        "title": "Tips para mejores resultados",
+        "tip1_title": "Describe con detalle",
+        "tip1_desc": "Mientras más específico seas en la descripción, mejor será el copy generado.",
+        "tip2_title": "Define beneficios claros",
+        "tip2_desc": "Máximo 3 beneficios concretos ayudan a la IA a crear mensajes impactantes.",
+        "tip3_title": "Usa emojis estratégicamente",
+        "tip3_desc": "Los emojis captan atención, pero úsalos con moderación para mejor efecto.",
+        "tip4_title": "Ajusta el tono",
+        "tip4_desc": "Elige el tono correcto según tu audiencia: casual para jóvenes, formal para B2B.",
+        "tip5_title": "Prueba diferentes modelos",
+        "tip5_desc": "Rápido para iteración rápida, Elite para contenido premium.",
+        "tip6_title": "Regenera si es necesario",
+        "tip6_desc": "No dudes en regenerar varias veces hasta obtener el resultado perfecto."
+    },
+    "export": {
+        "title": "Exportar",
+        "download_zip": "Descargar ZIP",
+        "download_text": "Descargar texto",
+        "share": "Compartir",
+        "share_facebook": "Compartir en Facebook",
+        "share_instagram": "Compartir en Instagram",
+        "share_linkedin": "Compartir en LinkedIn",
+        "share_whatsapp": "Compartir en WhatsApp"
+    },
+    "platforms": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "tiktok": "TikTok",
+        "linkedin": "LinkedIn",
+        "whatsapp": "WhatsApp Business"
+    },
+    "tones": {
+        "formal": "Formal y profesional",
+        "casual": "Casual y amigable",
+        "juvenil": "Juvenil y moderno",
+        "entusiasta": "Entusiasta y motivador",
+        "elegante": "Elegante y sofisticado",
+        "humoristico": "Con toque de humor"
+    },
+    "common": {
+        "loading": "Cargando...",
+        "error": "Error",
+        "success": "Éxito",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "delete": "Eliminar",
+        "edit": "Editar",
+        "close": "Cerrar",
+        "back": "Volver",
+        "next": "Siguiente",
+        "previous": "Anterior",
+        "online": "Online",
+        "offline": "Offline"
+    },
+    "errors": {
+        "api_key_required": "API Key es requerida",
+        "product_name_required": "Nombre del producto es requerido",
+        "description_required": "Descripción es requerida",
+        "platform_required": "Selecciona una plataforma",
+        "generation_failed": "Error al generar contenido",
+        "network_error": "Error de conexión",
+        "invalid_input": "Entrada inválida"
+    }
+}

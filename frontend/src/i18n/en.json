@@ -1,0 +1,135 @@
+{
+    "app": {
+        "title": "Mango Marketing AI",
+        "subtitle": "AI-Powered Content Generator",
+        "version": "1.0.0"
+    },
+    "navigation": {
+        "generator": "Generator",
+        "history": "History",
+        "settings": "Settings"
+    },
+    "config": {
+        "title": "Configuration",
+        "api_key": "API Key",
+        "api_key_placeholder": "Enter your API key",
+        "language": "Language",
+        "quality": "Quality Level",
+        "quality_fast": "Fast",
+        "quality_professional": "Professional",
+        "quality_elite": "Elite",
+        "save": "Save configuration",
+        "test_connection": "Test connection"
+    },
+    "product": {
+        "title": "Product Information",
+        "name": "Product Name",
+        "name_placeholder": "E.g: Artisan Coffee from Oaxaca",
+        "description": "Description",
+        "description_placeholder": "Describe your product...",
+        "category": "Category",
+        "price": "Price",
+        "price_placeholder": "25.00",
+        "currency": "Currency",
+        "platform": "Platform",
+        "tone": "Tone",
+        "length": "Length",
+        "length_short": "Short",
+        "length_medium": "Medium",
+        "length_long": "Long",
+        "emojis": "Use emojis",
+        "benefits": "Benefits (max 3)",
+        "benefit_placeholder": "E.g: 100% organic",
+        "add_benefit": "Add benefit",
+        "keywords": "Keywords",
+        "keyword_placeholder": "E.g: coffee, artisan, oaxaca"
+    },
+    "generator": {
+        "title": "Generate Copy",
+        "button": "Generate AI Copy",
+        "generating": "Generating...",
+        "copy_generated": "Copy generated",
+        "copy_to_clipboard": "Copy to clipboard",
+        "copied": "Copied!",
+        "download_zip": "Download ZIP",
+        "regenerate": "Regenerate",
+        "error": "Generation error",
+        "preview": "Preview"
+    },
+    "history": {
+        "title": "History",
+        "recent": "Recent generations",
+        "empty": "No generations yet",
+        "empty_subtitle": "Generate your first copy to see history",
+        "view": "View",
+        "delete": "Delete",
+        "regenerate": "Regenerate",
+        "stats_total": "Total",
+        "stats_today": "Today",
+        "stats_week": "This week"
+    },
+    "tips": {
+        "title": "Tips for better results",
+        "tip1_title": "Describe in detail",
+        "tip1_desc": "The more specific your description, the better the generated copy.",
+        "tip2_title": "Define clear benefits",
+        "tip2_desc": "Maximum 3 concrete benefits help AI create impactful messages.",
+        "tip3_title": "Use emojis strategically",
+        "tip3_desc": "Emojis capture attention, but use them moderately for best effect.",
+        "tip4_title": "Adjust the tone",
+        "tip4_desc": "Choose the right tone for your audience: casual for youth, formal for B2B.",
+        "tip5_title": "Try different models",
+        "tip5_desc": "Fast for quick iteration, Elite for premium content.",
+        "tip6_title": "Regenerate if needed",
+        "tip6_desc": "Don't hesitate to regenerate several times until you get the perfect result."
+    },
+    "export": {
+        "title": "Export",
+        "download_zip": "Download ZIP",
+        "download_text": "Download text",
+        "share": "Share",
+        "share_facebook": "Share on Facebook",
+        "share_instagram": "Share on Instagram",
+        "share_linkedin": "Share on LinkedIn",
+        "share_whatsapp": "Share on WhatsApp"
+    },
+    "platforms": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "tiktok": "TikTok",
+        "linkedin": "LinkedIn",
+        "whatsapp": "WhatsApp Business"
+    },
+    "tones": {
+        "formal": "Formal and professional",
+        "casual": "Casual and friendly",
+        "juvenil": "Youthful and trendy",
+        "entusiasta": "Enthusiastic and motivating",
+        "elegante": "Elegant and sophisticated",
+        "humoristico": "With a touch of humor"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "cancel": "Cancel",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "close": "Close",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "online": "Online",
+        "offline": "Offline"
+    },
+    "errors": {
+        "api_key_required": "API Key is required",
+        "product_name_required": "Product name is required",
+        "description_required": "Description is required",
+        "platform_required": "Select a platform",
+        "generation_failed": "Failed to generate content",
+        "network_error": "Connection error",
+        "invalid_input": "Invalid input"
+    }
+}
