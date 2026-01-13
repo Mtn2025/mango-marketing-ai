@@ -1,5 +1,6 @@
 from pydantic_settings import BaseSettings
 from typing import Optional
+from cryptography.fernet import Fernet
 
 
 class Settings(BaseSettings):
@@ -10,8 +11,8 @@ class Settings(BaseSettings):
     # Database
     DATABASE_URL: str
     
-    # Security
-    ENCRYPTION_KEY: str
+    # Security - Genera una key automática si no está configurada
+    ENCRYPTION_KEY: str = Fernet.generate_key().decode()
     
     # Google AI
     GOOGLE_API_KEY: Optional[str] = None
