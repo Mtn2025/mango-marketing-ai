@@ -130,7 +130,7 @@ class Generation(Base):
     product = relationship("Product", back_populates="generations")
     copies = relationship("Copy", back_populates="generation", cascade="all, delete-orphan")
     images = relationship("GeneratedImage", back_populates="generation", cascade="all, delete-orphan")
-    history = relationship("History", back_populates="generation", cascade="all, delete-orphan")
+    history_entries = relationship("History", back_populates="generation", cascade="all, delete-orphan")
 
 
 class Copy(Base):
