@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import ShareButtons from './ShareButtons';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
@@ -8,11 +9,21 @@ interface ExportPanelProps {
     productName: string;
     platforms: string[];
     hashtags?: string[];
+    productUrl?: string;
+    imageUrl?: string;
 }
 
-export default function ExportPanel({ copyData, productName, platforms, hashtags }: ExportPanelProps) {
+export default function ExportPanel({
+    copyData,
+    productName,
+    platforms,
+    hashtags,
+    productUrl,
+    imageUrl
+}: ExportPanelProps) {
     const [isExporting, setIsExporting] = useState(false);
     const [exportStatus, setExportStatus] = useState<string>('');
+    const [activeTab, setActiveTab] = useState<'share' | 'download'>('share');
 
     const downloadZIP = async () => {
         setIsExporting(true);
