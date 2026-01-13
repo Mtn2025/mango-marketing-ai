@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
-from app.api import copy, config, products, history, images
+from app.api import copy, config, products, history, images, export
 
 app = FastAPI(
     title="Mango Marketing AI",
@@ -24,6 +24,7 @@ app.include_router(config.router, prefix="/api", tags=["config"])
 app.include_router(products.router, prefix="/api", tags=["products"])
 app.include_router(history.router, prefix="/api", tags=["history"])
 app.include_router(images.router, prefix="/api", tags=["images"])
+app.include_router(export.router, prefix="/api", tags=["export"])
 
 @app.get("/")
 async def root():
@@ -38,7 +39,9 @@ async def root():
             "generate_copy": "/api/generate/copy",
             "generate_image": "/api/generate/image",
             "products": "/api/products",
-            "history": "/api/history"
+            "history": "/api/history",
+            "export_zip": "/api/export/zip",
+            "share_urls": "/api/export/share-urls"
         }
     }
 
