@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
+from app.api import copy
 
 app = FastAPI(
     title="Mango Marketing AI",
@@ -11,26 +12,28 @@ app = FastAPI(
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Frontend URL
+    allow_origins=["http://localhost:3000", "https://mango.ubrokers.mx"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Include routers
+app.include_router(copy.router, prefix="/api", tags=["copy"])
 
 @app.get("/")
 async def root():
     return {
         "message": "Mango Marketing AI API",
         "version": "1.0.0",
-        "status": "running"
+        "status": "running",
+        "endpoints": {
+            "docs": "/docs",
+            "health": "/health",
+            "generate_copy": "/api/generate/copy"
+        }
     }
 
 @app.get("/health")
 async def health_check():
     return {"status": "healthy"}
-
-# TODO: Import and include routers
-# from app.api.endpoints import config, copy, images
-# app.include_router(config.router, prefix="/api/config", tags=["config"])
-# app.include_router(copy.router, prefix="/api/copy", tags=["copy"])
-# app.include_router(images.router, prefix="/api/images", tags=["images"])
