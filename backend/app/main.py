@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
-from app.api import copy
+from app.api import copy, config
 
 app = FastAPI(
     title="Mango Marketing AI",
@@ -20,6 +20,7 @@ app.add_middleware(
 
 # Include routers
 app.include_router(copy.router, prefix="/api", tags=["copy"])
+app.include_router(config.router, prefix="/api", tags=["config"])
 
 @app.get("/")
 async def root():
@@ -30,6 +31,7 @@ async def root():
         "endpoints": {
             "docs": "/docs",
             "health": "/health",
+            "save_config": "/api/config",
             "generate_copy": "/api/generate/copy"
         }
     }
